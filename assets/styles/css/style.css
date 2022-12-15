@@ -271,4 +271,105 @@ body > footer {
   grid-column: 1/4;
 }
 
+.header-book {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0px 2px 2px 0 rgba(136, 18, 18, 0.5);
+  width: 100%;
+  min-height: 15vh;
+  background-color: #fdebde;
+  color: black;
+}
+
+body > header > figure {
+  padding-left: 2vw;
+  grid-column: 2/3;
+  grid-row: 1/4;
+  max-height: 15vh;
+}
+
+body > header > figure > img {
+  height: 100%;
+}
+
+body > header > nav {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: space-evenly;
+  align-items: center;
+  justify-content: center;
+  grid-row: 2/3;
+}
+
+body > header > nav > ul {
+  display: flex;
+}
+
+body > header > nav > ul > li {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+body > header > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 0 3rem;
+}
+
+body > header > ul {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+body > header > ul > li {
+  margin-right: 1.5vw;
+}
+
+body > header > ul > li > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+}
+
+body > header > ul > li > a > span:first-of-type {
+  font-size: 1.3rem;
+}
+
+body > header > ul > li > a > span:last-of-type {
+  display: none;
+  margin-left: 0.5vw;
+}
+
+body > header > ul > li > a:hover > span:last-of-type {
+  display: inline-block;
+}
+
+body > header > ul > li > a:hover > span:first-of-type {
+  font-size: 1.5rem;
+}
+
+body > header a:hover {
+  color: #881212;
+  font-weight: bold;
+}
+
+body > header > nav a:hover {
+  border-bottom: solid 4px rgba(136, 18, 18, 0.7);
+  border-right: solid 5px rgba(136, 18, 18, 0.7);
+  border-top: solid 1px rgba(136, 18, 18, 0.1);
+  border-left: solid 1px rgba(136, 18, 18, 0.1);
+  padding: 1.5vh 2vw;
+  transition: all 0.3s ease-out;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
