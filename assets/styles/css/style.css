@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -268,18 +268,43 @@ body > footer {
   height: 15vh;
 }
 #home-page > main > section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column: 1/4;
 }
 
 .header-book {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+=======
+  grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+>>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
   grid-template-rows: 1fr 1fr 1fr;
   box-shadow: 0px 2px 2px 0 rgba(136, 18, 18, 0.5);
   width: 100%;
   min-height: 15vh;
+<<<<<<< HEAD
   background-color: #fdebde;
   color: black;
+=======
+}
+@media (prefers-color-scheme: light) {
+  .header-book {
+    background-color: #fdebde;
+  }
+  .header-book a {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .header-book {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header-book a {
+    color: #fdebde;
+  }
+>>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
 }
 
 body > header > figure {

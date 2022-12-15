@@ -1,12 +1,26 @@
 .header-book {
         display:grid;
-        grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         box-shadow: 0px 2px 2px 0 rgba(136, 18, 18, 0.5);
         width:100%;
         min-height: 15vh;
+
+        @media (prefers-color-scheme: light) {
         background-color:#fdebde;
-        color:black;
+
+        a {
+            color: $black;
+        }
+        }
+
+        @media(prefers-color-scheme: dark) {
+            background-color: $black;
+
+        a {
+            color: $almond;
+        }
+        }
 }
 
 
