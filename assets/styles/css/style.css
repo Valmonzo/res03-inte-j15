@@ -277,10 +277,18 @@ body > footer {
 
 .header-book {
   display: grid;
+<<<<<<< HEAD
+  grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+=======
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+>>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
   min-height: 15vh;
+<<<<<<< HEAD
+  background-color: #fdebde;
+  color: black;
+=======
 }
 @media (prefers-color-scheme: light) {
   .header-book {
@@ -307,6 +315,7 @@ body > footer {
   .header-book a {
     color: #fdebde;
   }
+<<<<<<< HEAD
   .header-book a:hover {
     color: #fdebde;
   }
@@ -317,6 +326,9 @@ body > footer {
     border-bottom: solid 4px #c22b2b;
     border-right: solid 4px #c22b2b;
   }
+=======
+>>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
+>>>>>>> 62a12d564e3c9321bec2e25ad45ff7b7ea9d9b98
 }
 
 body > header > figure {

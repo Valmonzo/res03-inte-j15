@@ -1,0 +1,93 @@
+article.book{
+    
+    &>header{
+        
+        &>figure{
+            
+            &>img{
+                
+            }
+            
+            &figcaption{
+                
+            }
+        }
+        
+        &>h4{
+            
+        }
+    }
+    
+    &>section{
+        
+        &>h4{
+            
+        }
+        
+        &>h5{
+            
+        }
+        
+        &>p{
+            
+        }
+        
+    }
+    
+    &>footer{
+        
+        &>ul{
+            
+            &>li{
+                
+                &:first-of-type{
+                    
+                }
+                
+                &:last-of-type{
+                    
+                }
+            }
+        }
+        
+        &>figure{
+            
+            &>img{
+                
+            }
+            
+            &figcaption{
+                
+            }
+        }
+    }
+}
+
+/*
+
+    <article class="book">
+        <header>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <h4></h4>
+        </header>
+        <section>
+            <h4></h4>
+            <h5></h5>
+            <p></p>
+        </section>
+        <footer>
+            <ul>
+                <li>Prix: </li>
+                <li>Édité le: </li>
+            </ul>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Par </figcaption>
+            </figure>
+        </footer>
+    </article>
+    
+*/
