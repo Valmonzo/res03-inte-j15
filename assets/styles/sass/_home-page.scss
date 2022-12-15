@@ -1,17 +1,19 @@
 #home-page{
-    
+
     &>main{
-        
+
         display: grid;
         grid-template-columns: .1fr .8fr .1fr;
-        
-        &>section{
-            
+
+
+        &>section {
+
             grid-column: 2/3;
             height: 15vh;
-            
+
             &:first-of-type{
-                
+                display:grid;
+                grid-template-columns: 1fr 1fr;
                 grid-column: 1/4;
             }
         }
