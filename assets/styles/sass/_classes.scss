@@ -1,0 +1,35 @@
+/******************** DISPLAY ********************/
+
+.sr-only{
+    
+    display: none;
+}
+
+
+
+/******************** BODY ********************/
+
+.body-mode{
+    
+    @media(prefers-color-scheme: light){
+        
+        background-color: $almond;
+    }
+    
+    @media(prefers-color-scheme: dark){
+        
+        background-color: $black;
+    }
+}
+
+/******************** SECTIONS ********************/
+
+/******************** SECTIONS ********************/
+
+/******************** SECTIONS ********************/
+
+/******************** SECTIONS ********************/
+
+/******************** SECTIONS ********************/
+
+/******************** SECTIONS ********************/
