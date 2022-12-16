@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -73,11 +74,13 @@ table {
 @media (prefers-color-scheme: light) {
   .body-mode {
     background-color: #fdebde;
+    color: rgba(0, 0, 0, 0.9);
   }
 }
 @media (prefers-color-scheme: dark) {
   .body-mode {
     background-color: rgba(0, 0, 0, 0.9);
+    color: #fdebde;
   }
 }
 
@@ -275,19 +278,11 @@ body > footer {
 
 .header-book {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
-=======
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
->>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
   grid-template-rows: 1fr 1fr 1fr;
   box-shadow: 0px 2px 2px 0 rgba(136, 18, 18, 0.5);
   width: 100%;
   min-height: 15vh;
-<<<<<<< HEAD
-  background-color: #fdebde;
-  color: black;
-=======
 }
 @media (prefers-color-scheme: light) {
   .header-book {
@@ -304,7 +299,6 @@ body > footer {
   .header-book a {
     color: #fdebde;
   }
->>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
 }
 
 body > header > figure {
@@ -390,6 +384,139 @@ body > header > nav a:hover {
   border-left: solid 1px rgba(136, 18, 18, 0.1);
   padding: 1.5vh 2vw;
   transition: all 0.3s ease-out;
+}
+
+body#single > main {
+  min-height: 120vh;
+  display: grid;
+  grid-template-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
+  padding-top: 5rem;
+}
+body#single > main > section {
+  grid-column: 2/4;
+}
+body#single > main > section:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body#single > main > section:first-of-type > section:first-of-type {
+  margin-right: 5rem;
+}
+body#single > main > section:first-of-type > section:first-of-type > h3 {
+  padding-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+body#single > main > section:first-of-type > section:first-of-type > p:first-of-type {
+  padding-bottom: 0.8;
+}
+body#single > main > section:first-of-type > section:first-of-type > p {
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+body#single > main > section:first-of-type > section:first-of-type > p > q {
+  quotes: "«" "»";
+}
+body#single > main > section:first-of-type > section:first-of-type > p > q::before {
+  content: open-quote;
+}
+body#single > main > section:first-of-type > section:first-of-type > p > q::after {
+  content: close-quote;
+}
+body#single > main > section:first-of-type > section:last-of-type {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+}
+body#single > main > section:first-of-type > section:last-of-type > figure {
+  height: 50vh;
+  width: 18vw;
+}
+body#single > main > section:first-of-type > section:last-of-type > figure > img {
+  height: 100%;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header {
+  padding-bottom: 1.8rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > h4 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > section {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.3rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > section > span {
+  color: yellow;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > section > span:nth-of-type(5) {
+  padding-right: 0.4rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > section > p {
+  padding-right: 0.4rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > header > p {
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > section > h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #881212;
+  padding-bottom: 0.8rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > section > p {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > section > button {
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  color: #fdebde;
+  background: #881212;
+  border: none;
+  border-radius: 3px;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > footer {
+  padding-top: 1rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > footer > a {
+  padding-right: 1rem;
+  text-underline-offset: 0.3rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > footer > a > span {
+  padding-right: 0.4rem;
+}
+body#single > main > section:first-of-type > section:last-of-type > article > footer > a:visited {
+  color: #fdebde;
+}
+body#single > main > section:last-of-type {
+  display: grid;
+  grid-template-rows: 0.2fr 0.8fr;
+  padding-top: 1rem;
+  text-align: center;
+}
+body#single > main > section:last-of-type > h3 {
+  font-size: 1.8rem;
+}
+body#single > main > section:last-of-type > section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-columns-gap: 0.5rem;
+}
+padding body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  text-align: end;
+}
+body#single > main > section:last-of-type > section > section > table > tbody > tr > td {
+  text-align: start;
+  padding-bottom: 1.8rem;
+  padding-right: 3rem;
+}
+body#single > main > section:last-of-type > section > section > table > tbody > tr > th {
+  text-align: end;
+  padding-bottom: 1.8rem;
 }
 
 html {
