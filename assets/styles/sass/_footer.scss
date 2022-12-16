@@ -4,6 +4,7 @@ body{
     
     display: grid;
     grid-template-columns: .1fr .8fr .1fr;
+    padding-bottom: 2rem;
     
 @media(prefers-color-scheme: light){
     .container{
@@ -120,7 +121,7 @@ body{
       position: absolute;
       left:0;
       bottom: -10px;
-      background-color: $red;
+      background-color: $darkThemeRed;
       height: 2px;
       box-sizing: border-box;
       width: 50px;
@@ -145,7 +146,7 @@ body{
       display: inline-block;
       height: 40px;
       width: 40px;
-      background-color: $red;
+      background-color: $darkThemeRed;
       margin:0 10px 10px 0;
       text-align: center;
       line-height: 40px;
