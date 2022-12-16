@@ -14,7 +14,6 @@ article.book{
     @media(prefers-color-scheme: dark){
         
         border: solid 2px $darkThemeRed;
-        background-color: $black;
         color: $almond;
         box-shadow: 0 4px 4px 0 $darkThemeRed;
     }
