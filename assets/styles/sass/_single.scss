@@ -201,7 +201,7 @@ body#single{
         
     }
     }
-    @media(prefers-color-scheme: dark) and (max-width: 810px){
+    @media(prefers-color-scheme: dark) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
     
         & > main{
         min-height: 80vh;
@@ -369,7 +369,7 @@ body#single{
                 & > section{
                     margin-left: 5rem;
                     padding-bottom: 2rem;
-                    justify-self: center;
+                    
                     
                     & > table{
                         
@@ -383,7 +383,9 @@ body#single{
                                     & > h6{
                                         font-size: 1.2rem;
                                         padding-bottom: 2rem;
-                                        text-align: center;
+                                        text-align: left;
+                                        text-decoration: underline $darkThemeRed;
+                                        text-underline-offset: 0.3rem;
                                     }
                                 }
                             }
@@ -414,29 +416,30 @@ body#single{
         
     }
     }
-    @media(prefers-color-scheme: dark) and (max-width: 574px){
+    @media(prefers-color-scheme: dark) and (min-width: 320px) and (max-width: 480px){
     
         & > main{
-        min-height: 120vh;
+        min-height: 80vh;
         display: grid;
-        grid-template-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
-        padding-top: 5rem;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 3rem;
          
         & > section{
-            grid-column: 2/4;
+            
         }
         
         & > section:first-of-type{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             
             
            & > section:first-of-type{
-               margin-right: 5rem;
+               
                
                & > h3{
                    padding-bottom: 1.5rem;
                    font-size: 1.3rem;
+                   text-align: center;
                }
                
                & > p:first-of-type{
@@ -464,11 +467,13 @@ body#single{
            & > section:last-of-type{
                 display: grid;
                 grid-template-columns: 0.1fr 0.9fr;
+                gap: 10%;
                 
                 
                 & > figure{
-                    height: 50vh;
-                    width: 18vw;
+                    margin-left: 5rem;
+                    height: 30vh;
+                    width: 20vw;
                    
                     & > img{
                         height: 100%;
@@ -476,7 +481,8 @@ body#single{
                }
                
                 & > article{
-                   
+                    margin-right: 4rem;
+                    
                     & > header{
                        padding-bottom: 1.8rem;
                        
@@ -565,16 +571,21 @@ body#single{
             
             & > h3{
                 font-size: 1.8rem;
+                padding-bottom: 3rem;
             }
             
             & > section{
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-columns-gap: 0.5rem;
+                grid-template-rows: repeat(3, 1fr);
+                grid-rows-gap: 0.5rem;
                 
                 & > section{
+                    margin-left: 5rem;
+                    padding-bottom: 2rem;
+                    
                     
                     & > table{
+                        
                         
                         & > thead{
                             
@@ -585,7 +596,9 @@ body#single{
                                     & > h6{
                                         font-size: 1.2rem;
                                         padding-bottom: 2rem;
-                                        text-align: start;
+                                        text-align: left;
+                                        text-decoration: underline $darkThemeRed;
+                                        text-underline-offset: 0.3rem;
                                     }
                                 }
                             }
@@ -593,16 +606,17 @@ body#single{
                         
                         & > tbody{
                             
+                            
                             & > tr{
                                 
                                 
-                                & > td{
+                                & > td:first-of-type{
                                     text-align: start;
                                     padding-bottom: 1.8rem;
                                     padding-right: 3rem;
                                 }
                                 
-                                & > th{
+                                & > td:last-of-type{
                                     text-align: end;
                                     padding-bottom: 1.8rem;
                                 }

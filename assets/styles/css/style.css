@@ -721,7 +721,7 @@ body > header > nav a:hover {
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: dark) and (max-width: 810px) {
+@media (prefers-color-scheme: dark) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body#single > main {
     min-height: 80vh;
     display: grid;
@@ -849,12 +849,13 @@ body > header > nav a:hover {
   body#single > main > section:last-of-type > section > section {
     margin-left: 5rem;
     padding-bottom: 2rem;
-    justify-self: center;
   }
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
     padding-bottom: 2rem;
-    text-align: center;
+    text-align: left;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
   body#single > main > section:last-of-type > section > section > table > tbody > tr > td:first-of-type {
     text-align: start;
@@ -866,26 +867,21 @@ body > header > nav a:hover {
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: dark) and (max-width: 574px) {
+@media (prefers-color-scheme: dark) and (min-width: 320px) and (max-width: 480px) {
   body#single > main {
-    min-height: 120vh;
+    min-height: 80vh;
     display: grid;
-    grid-template-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
-    padding-top: 5rem;
-  }
-  body#single > main > section {
-    grid-column: 2/4;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 3rem;
   }
   body#single > main > section:first-of-type {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  body#single > main > section:first-of-type > section:first-of-type {
-    margin-right: 5rem;
+    grid-template-rows: repeat(2, 1fr);
   }
   body#single > main > section:first-of-type > section:first-of-type > h3 {
     padding-bottom: 1.5rem;
     font-size: 1.3rem;
+    text-align: center;
   }
   body#single > main > section:first-of-type > section:first-of-type > p:first-of-type {
     padding-bottom: 0.8;
@@ -906,13 +902,18 @@ body > header > nav a:hover {
   body#single > main > section:first-of-type > section:last-of-type {
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
+    gap: 10%;
   }
   body#single > main > section:first-of-type > section:last-of-type > figure {
-    height: 50vh;
-    width: 18vw;
+    margin-left: 5rem;
+    height: 30vh;
+    width: 20vw;
   }
   body#single > main > section:first-of-type > section:last-of-type > figure > img {
     height: 100%;
+  }
+  body#single > main > section:first-of-type > section:last-of-type > article {
+    margin-right: 4rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header {
     padding-bottom: 1.8rem;
@@ -979,23 +980,30 @@ body > header > nav a:hover {
   }
   body#single > main > section:last-of-type > h3 {
     font-size: 1.8rem;
+    padding-bottom: 3rem;
   }
   body#single > main > section:last-of-type > section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-columns-gap: 0.5rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-rows-gap: 0.5rem;
+  }
+  body#single > main > section:last-of-type > section > section {
+    margin-left: 5rem;
+    padding-bottom: 2rem;
   }
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
     padding-bottom: 2rem;
-    text-align: start;
+    text-align: left;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
-  body#single > main > section:last-of-type > section > section > table > tbody > tr > td {
+  body#single > main > section:last-of-type > section > section > table > tbody > tr > td:first-of-type {
     text-align: start;
     padding-bottom: 1.8rem;
     padding-right: 3rem;
   }
-  body#single > main > section:last-of-type > section > section > table > tbody > tr > th {
+  body#single > main > section:last-of-type > section > section > table > tbody > tr > td:last-of-type {
     text-align: end;
     padding-bottom: 1.8rem;
   }
