@@ -1,0 +1,13 @@
+body#singles-list{
+    
+    &>main{
+        
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        
+        &>section{
+            
+            grid-column: 2/3;
+        }
+    }
+}
