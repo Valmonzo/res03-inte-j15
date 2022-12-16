@@ -96,17 +96,23 @@ article.book {
 }
 @media (prefers-color-scheme: light) {
   article.book {
-    border: solid 2px #881212;
+    border-bottom: solid 2px #881212;
+    border-right: solid 2px #881212;
+    border-top: solid 1px #881212;
+    border-left: solid 1px #881212;
     background-color: #fdebde;
     color: black;
-    box-shadow: 0 4px 4px 0 #881212;
+    box-shadow: 4px 4px 4px 0 #881212;
   }
 }
 @media (prefers-color-scheme: dark) {
   article.book {
-    border: solid 2px #c22b2b;
+    border-bottom: solid 2px #c22b2b;
+    border-right: solid 2px #c22b2b;
+    border-top: solid 1px #c22b2b;
+    border-left: solid 1px #c22b2b;
     color: #fdebde;
-    box-shadow: 0 4px 4px 0 #c22b2b;
+    box-shadow: 4px 4px 4px 0 #c22b2b;
   }
 }
 article.book > header > figure {
