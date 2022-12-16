@@ -1,60 +1,63 @@
 article.book{
-    
+
     border-radius: 5px;
     padding: 3vh 3vw 1.5vh 3vw;
-    
+
     @media(prefers-color-scheme: light){
-        
+
         border: solid 2px $red;
         background-color: $almond;
         color: black;
         box-shadow: 0 4px 4px 0 $red;
     }
-    
+
     @media(prefers-color-scheme: dark){
-        
+
         border: solid 2px $darkThemeRed;
         color: $almond;
         box-shadow: 0 4px 4px 0 $darkThemeRed;
     }
-    
-    
+
+
     &>header{
-        
+
         &>figure{
-            
+
             max-width: 100%;
-                
+
             &>img{
-                
-                max-width: 100%;
+
                 border-radius: 5px;
+                max-height: 28rem;
+                width:100%;
+
             }
-            
+
             &>figcaption{
-            
+
                 display: none;
             }
         }
-        
+
         &>h4{
-            
+
             display: none;
         }
     }
-    
+
     &>section{
-        
+
         padding: .5vh;
-        
+
         &>h4{
-            
+
             font-size: 1.5rem;
             margin-bottom: 1vh;
+            min-height:2.5rem;
         }
-        
+
         &>a{
-            
+
             display: block;
             text-decoration: none;
             text-align: center;
@@ -63,31 +66,31 @@ article.book{
             margin-bottom: 1vh;
             border-radius: 10px;
             padding: .5vh;
-            
+
             @media(prefers-color-scheme: light){
-                
+
                 color: $red;
             }
-            
+
             @media(prefers-color-scheme: dark){
-                
+
                 color: $darkThemeRed;
             }
-            
+
             &>span{
-                
+
                 margin-left: 4%;
             }
         }
-        
+
     }
-    
+
     &>footer{
-        
+
         padding: .5vh;
-                    
+
         &>a{
-            
+
             display: block;
             text-decoration: none;
             text-align: center;
@@ -95,51 +98,54 @@ article.book{
             font-weight: bold;
             border-radius: 10px;
             padding: 1.5vh .5vw;
-            
+            margin-right: 0.2vw;
+
             @media(prefers-color-scheme: light){
-                
+
                 background-color: $red;
                 color: $almond;
             }
-            
+
             @media(prefers-color-scheme: dark){
-                
+
                 background-color: $darkThemeRed;
                 color: $almond;
             }
-            
+
             &>span{
-                
+
                 display: none;
-                border-top: solid 2px $almond;
+                border-left: solid 2px $almond;
+                padding-left: 0.2vw;
             }
-            
+
             &:hover{
-                
+
                 &>span{
-                    
+
                     display: inline-block;
                 }
             }
         }
-        
-        
+
+
         &>figure{
-            
+
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-top: 2vh;
-            
+
+
             &>img{
-                
+
                 max-width: 30%;
                 border-radius: 50px;
                 margin-right: 1vw;
             }
-            
+
             &>figcaption{
-                
+
                 font-size: 1.3rem;
             }
         }
@@ -167,5 +173,5 @@ article.book{
             </figure>
         </footer>
     </article>
-    
+
 */

@@ -113,8 +113,9 @@ article.book > header > figure {
   max-width: 100%;
 }
 article.book > header > figure > img {
-  max-width: 100%;
   border-radius: 5px;
+  max-height: 28rem;
+  width: 100%;
 }
 article.book > header > figure > figcaption {
   display: none;
@@ -128,6 +129,7 @@ article.book > section {
 article.book > section > h4 {
   font-size: 1.5rem;
   margin-bottom: 1vh;
+  min-height: 2.5rem;
 }
 article.book > section > a {
   display: block;
@@ -163,6 +165,7 @@ article.book > footer > a {
   font-weight: bold;
   border-radius: 10px;
   padding: 1.5vh 0.5vw;
+  margin-right: 0.2vw;
 }
 @media (prefers-color-scheme: light) {
   article.book > footer > a {
@@ -178,7 +181,8 @@ article.book > footer > a {
 }
 article.book > footer > a > span {
   display: none;
-  border-top: solid 2px #fdebde;
+  border-left: solid 2px #fdebde;
+  padding-left: 0.2vw;
 }
 article.book > footer > a:hover > span {
   display: inline-block;
@@ -407,14 +411,25 @@ body > footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 10vh;
-  grid-row-gap: 2vh;
+  grid-row-gap: 5vh;
 }
 #home-page > main > section:not(:first-of-type) > h4 {
   grid-column: 1/4;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  padding-bottom: 3vh;
+  margin-bottom: 3vh;
   font-weight: bold;
+  padding-bottom: 0.5vh;
+}
+@media (prefers-color-scheme: light) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    border-bottom: 2px solid #881212;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    border-bottom: 2px solid #c22b2b;
+  }
 }
 #home-page > main > section:not(:first-of-type) > .book {
   width: 50%;
