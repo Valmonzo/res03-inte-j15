@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -89,6 +90,138 @@ table {
 /******************** SECTIONS ********************/
 /******************** SECTIONS ********************/
 /******************** SECTIONS ********************/
+article.book {
+  border-radius: 5px;
+  padding: 3vh 3vw 1.5vh 3vw;
+}
+@media (prefers-color-scheme: light) {
+  article.book {
+    border: solid 2px #881212;
+    background-color: #fdebde;
+    color: black;
+    box-shadow: 0 4px 4px 0 #881212;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  article.book {
+    border: solid 2px #c22b2b;
+    color: #fdebde;
+    box-shadow: 0 4px 4px 0 #c22b2b;
+  }
+}
+article.book > header > figure {
+  max-width: 100%;
+}
+article.book > header > figure > img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+article.book > header > figure > figcaption {
+  display: none;
+}
+article.book > header > h4 {
+  display: none;
+}
+article.book > section {
+  padding: 0.5vh;
+}
+article.book > section > h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+}
+article.book > section > a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1vh;
+  border-radius: 10px;
+  padding: 0.5vh;
+}
+@media (prefers-color-scheme: light) {
+  article.book > section > a {
+    color: #881212;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  article.book > section > a {
+    color: #c22b2b;
+  }
+}
+article.book > section > a > span {
+  margin-left: 4%;
+}
+article.book > footer {
+  padding: 0.5vh;
+}
+article.book > footer > a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1.5vh 0.5vw;
+}
+@media (prefers-color-scheme: light) {
+  article.book > footer > a {
+    background-color: #881212;
+    color: #fdebde;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  article.book > footer > a {
+    background-color: #c22b2b;
+    color: #fdebde;
+  }
+}
+article.book > footer > a > span {
+  display: none;
+  border-top: solid 2px #fdebde;
+}
+article.book > footer > a:hover > span {
+  display: inline-block;
+}
+article.book > footer > figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2vh;
+}
+article.book > footer > figure > img {
+  max-width: 30%;
+  border-radius: 50px;
+  margin-right: 1vw;
+}
+article.book > footer > figure > figcaption {
+  font-size: 1.3rem;
+}
+
+/*
+
+    <article class="book">
+        <header>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Couverture du livre: "" de .</figcaption>
+            </figure>
+            <h4></h4>
+        </header>
+        <section>
+            <h4></h4>
+            <a href="">Détails<span class="fa-solid fa-arrow-down-short-wide"></span></a>
+        </section>
+        <footer>
+            <a href="">Prix: <span>Ajouter au panier</span></a>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </footer>
+    </article>
+
+*/
 body > footer {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 0.1fr;
@@ -264,10 +397,28 @@ body > footer {
 #home-page > main {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 0.1fr;
+  padding-bottom: 5vh;
 }
 #home-page > main > section {
   grid-column: 2/3;
-  height: 15vh;
+}
+#home-page > main > section:not(:first-of-type) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 10vh;
+  grid-row-gap: 2vh;
+}
+#home-page > main > section:not(:first-of-type) > h4 {
+  grid-column: 1/4;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+  font-weight: bold;
+}
+#home-page > main > section:not(:first-of-type) > .book {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
 }
 #home-page > main > section:first-of-type {
   min-height: 50vh;
