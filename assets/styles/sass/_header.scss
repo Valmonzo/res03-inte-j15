@@ -14,7 +14,12 @@
 
         a {
             color: $black;
+
+            &:hover {
+                color: #881212;;
+            }
         }
+
 
         .dark-logo {
             display: none;
@@ -132,7 +137,6 @@ body>header>ul>li>a:hover>span:first-of-type {
 
 
 body>header a:hover {
-    color: #881212;
     font-weight: bold;
 
 }
