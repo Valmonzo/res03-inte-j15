@@ -270,25 +270,50 @@ body > footer {
   height: 15vh;
 }
 #home-page > main > section:first-of-type {
+  min-height: 50vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-column: 1/4;
+  background: rgba(209, 176, 133, 0.7);
+}
+#home-page > main > section:first-of-type > section {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+}
+@media (prefers-color-scheme: light) {
+  #home-page > main > section:first-of-type > section span {
+    color: #881212;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #home-page > main > section:first-of-type > section span {
+    color: #c22b2b;
+  }
+}
+#home-page > main > section:first-of-type > section > h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+#home-page > main > section:first-of-type > section > h3 {
+  font-size: 4rem;
+}
+#home-page > main > section:first-of-type > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+}
+#home-page > main > section:first-of-type > figure > img {
+  width: 90%;
 }
 
 .header-book {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
-=======
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
->>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
   min-height: 15vh;
-<<<<<<< HEAD
-  background-color: #fdebde;
-  color: black;
-=======
 }
 @media (prefers-color-scheme: light) {
   .header-book {
@@ -297,6 +322,9 @@ body > footer {
   }
   .header-book a {
     color: rgba(0, 0, 0, 0.9);
+  }
+  .header-book a:hover {
+    color: #881212;
   }
   .header-book .dark-logo {
     display: none;
@@ -315,7 +343,6 @@ body > footer {
   .header-book a {
     color: #fdebde;
   }
-<<<<<<< HEAD
   .header-book a:hover {
     color: #fdebde;
   }
@@ -326,9 +353,6 @@ body > footer {
     border-bottom: solid 4px #c22b2b;
     border-right: solid 4px #c22b2b;
   }
-=======
->>>>>>> 3b53ed75b49052c0e8405692e65a1e7cebe570c7
->>>>>>> 62a12d564e3c9321bec2e25ad45ff7b7ea9d9b98
 }
 
 body > header > figure {
@@ -403,7 +427,6 @@ body > header > ul > li > a:hover > span:first-of-type {
 }
 
 body > header a:hover {
-  color: #881212;
   font-weight: bold;
 }
 
