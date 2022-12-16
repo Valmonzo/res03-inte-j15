@@ -1,91 +1,170 @@
 article.book{
     
+    border-radius: 5px;
+    padding: 3vh 3vw 1.5vh 3vw;
+    
+    @media(prefers-color-scheme: light){
+        
+        border: solid 2px $red;
+        background-color: $almond;
+        color: black;
+        box-shadow: 0 4px 4px 0 $red;
+    }
+    
+    @media(prefers-color-scheme: dark){
+        
+        border: solid 2px $darkThemeRed;
+        background-color: $black;
+        color: $almond;
+        box-shadow: 0 4px 4px 0 $darkThemeRed;
+    }
+    
+    
     &>header{
         
         &>figure{
             
+            max-width: 100%;
+                
             &>img{
                 
+                max-width: 100%;
+                border-radius: 5px;
             }
             
-            &figcaption{
-                
+            &>figcaption{
+            
+                display: none;
             }
         }
         
         &>h4{
             
+            display: none;
         }
     }
     
     &>section{
         
+        padding: .5vh;
+        
         &>h4{
             
+            font-size: 1.5rem;
+            margin-bottom: 1vh;
         }
         
-        &>h5{
+        &>a{
             
-        }
-        
-        &>p{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1vh;
+            border-radius: 10px;
+            padding: .5vh;
             
+            @media(prefers-color-scheme: light){
+                
+                color: $red;
+            }
+            
+            @media(prefers-color-scheme: dark){
+                
+                color: $darkThemeRed;
+            }
+            
+            &>span{
+                
+                margin-left: 4%;
+            }
         }
         
     }
     
     &>footer{
         
-        &>ul{
+        padding: .5vh;
+                    
+        &>a{
             
-            &>li{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 1.5vh .5vw;
+            
+            @media(prefers-color-scheme: light){
                 
-                &:first-of-type{
-                    
-                }
+                background-color: $red;
+                color: $almond;
+            }
+            
+            @media(prefers-color-scheme: dark){
                 
-                &:last-of-type{
+                background-color: $darkThemeRed;
+                color: $almond;
+            }
+            
+            &>span{
+                
+                display: none;
+                border-top: solid 2px $almond;
+            }
+            
+            &:hover{
+                
+                &>span{
                     
+                    display: inline-block;
                 }
             }
         }
         
+        
         &>figure{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 2vh;
             
             &>img{
                 
+                max-width: 30%;
+                border-radius: 50px;
+                margin-right: 1vw;
             }
             
-            &figcaption{
+            &>figcaption{
                 
+                font-size: 1.3rem;
             }
         }
     }
 }
-
 /*
 
     <article class="book">
         <header>
             <figure>
                 <img src="" alt="">
-                <figcaption></figcaption>
+                <figcaption>Couverture du livre: "" de .</figcaption>
             </figure>
             <h4></h4>
         </header>
         <section>
             <h4></h4>
-            <h5></h5>
-            <p></p>
+            <a href="">Détails<span class="fa-solid fa-arrow-down-short-wide"></span></a>
         </section>
         <footer>
-            <ul>
-                <li>Prix: </li>
-                <li>Édité le: </li>
-            </ul>
+            <a href="">Prix: <span>Ajouter au panier</span></a>
             <figure>
                 <img src="" alt="">
-                <figcaption>Par </figcaption>
+                <figcaption></figcaption>
             </figure>
         </footer>
     </article>
