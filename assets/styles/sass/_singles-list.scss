@@ -1,4 +1,4 @@
-body#singles-list{
+#singles-list{
 
     &>main {
 
@@ -13,12 +13,12 @@ body#singles-list{
 
             &:not(:first-of-type) {
                 display:grid;
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 padding-top: 10vh;
-                grid-row-gap:1vh;
+                grid-row-gap: 1vh;
 
                 &>h4 {
-                    grid-column:1/4;
+                    grid-column: 1/4;
                     font-size: 2rem;
                     text-transform:uppercase;
                     padding-bottom:3vh;

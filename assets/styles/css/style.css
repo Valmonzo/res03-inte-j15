@@ -1392,6 +1392,81 @@ article.team-member > section > ul > li > span {
   }
 }
 
+#singles-list > main {
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 0.1fr;
+  padding-bottom: 5vh;
+}
+#singles-list > main > section {
+  grid-column: 2/3;
+}
+#singles-list > main > section:not(:first-of-type) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 10vh;
+  grid-row-gap: 1vh;
+}
+#singles-list > main > section:not(:first-of-type) > h4 {
+  grid-column: 1/4;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 3vh;
+  font-weight: bold;
+}
+@media (prefers-color-scheme: light) {
+  #singles-list > main > section:not(:first-of-type) > h4 {
+    border-bottom: solid #881212 3px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #singles-list > main > section:not(:first-of-type) > h4 {
+    border-bottom: solid #c22b2b 3px;
+  }
+}
+#singles-list > main > section:not(:first-of-type) > .book {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+#singles-list > main > section:first-of-type {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-column: 1/4;
+  background: rgba(209, 176, 133, 0.7);
+}
+#singles-list > main > section:first-of-type > section {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+}
+@media (prefers-color-scheme: light) {
+  #singles-list > main > section:first-of-type > section span {
+    color: #881212;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #singles-list > main > section:first-of-type > section span {
+    color: #c22b2b;
+  }
+}
+#singles-list > main > section:first-of-type > section > h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+#singles-list > main > section:first-of-type > section > h3 {
+  font-size: 4rem;
+}
+#singles-list > main > section:first-of-type > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+}
+#singles-list > main > section:first-of-type > figure > img {
+  width: 90%;
+}
+
 body > footer {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 0.1fr;
