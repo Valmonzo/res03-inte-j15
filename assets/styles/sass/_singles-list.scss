@@ -1,13 +1,90 @@
 body#singles-list{
-    
-    &>main{
-        
+
+    &>main {
+
         display: grid;
-        grid-template-columns: 1fr 8fr 1fr;
-        
-        &>section{
-            
+        grid-template-columns: .1fr .8fr .1fr;
+        padding-bottom: 5vh;
+
+
+        &>section {
+
             grid-column: 2/3;
+
+            &:not(:first-of-type) {
+                display:grid;
+                grid-template-columns: repeat(5, 1fr);
+                padding-top: 10vh;
+                grid-row-gap:1vh;
+
+                &>h4 {
+                    grid-column:1/4;
+                    font-size: 2rem;
+                    text-transform:uppercase;
+                    padding-bottom:3vh;
+                    font-weight:bold;
+                    
+                    @media(prefers-color-scheme: light) {
+                        border-bottom: solid $red 3px;
+                    }
+
+                    @media(prefers-color-scheme: dark) {
+                        border-bottom: solid $darkThemeRed 3px;
+                    }
+                }
+
+                & > .book {
+                    width:50%;
+                    align-self:center;
+                    justify-self:center;
+                }
+            }
+
+            &:first-of-type {
+                min-height: 50vh;
+                display: grid;
+                grid-template-columns: 1fr 4fr 4fr 1fr;
+                grid-column: 1/4;
+                background: rgba(209, 176, 133, 0.7);
+
+                &>section {
+                    justify-self: center;
+                    align-self: center;
+                    grid-column: 2/3;
+                    & span {
+                        @media(prefers-color-scheme: light) {
+                            color:$red;
+                        }
+
+                        @media(prefers-color-scheme: dark) {
+                            color: $darkThemeRed;
+                        }
+                    }
+
+
+                    &>h2 {
+                        font-size: 6rem;
+                        text-transform: uppercase;
+                    }
+
+                    &>h3 {
+                        font-size: 4rem;
+                    }
+
+                }
+                &>figure {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3/4;
+
+                    &>img {
+                        width: 90%;
+                    }
+                }
+
+
+            }
         }
     }
 }
