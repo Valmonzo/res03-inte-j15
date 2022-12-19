@@ -193,11 +193,17 @@ body > header > nav {
     justify-self: center;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   body > header > nav {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
     flex-direction: space-evenly;
+  }
+}
+@media (min-width: 1281px) {
+  body > header > nav {
+    grid-row: 2/3;
+    grid-column: 3/4;
   }
 }
 
@@ -239,7 +245,7 @@ body > header > ul {
     grid-row: 2/3;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1281px) {
   body > header > ul {
     grid-row: 2/3;
     grid-column: 4/5;
@@ -627,14 +633,42 @@ article.team-member > section > ul > li > span {
   }
 }
 #home-page > main > section:not(:first-of-type) > .book {
-  width: 50%;
   align-self: center;
   justify-self: center;
 }
+@media (min-width: 1025px) {
+  #home-page > main > section:not(:first-of-type) > .book {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:not(:first-of-type) > .book {
+    width: 70%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:not(:first-of-type) > .book {
+    width: 80%;
+  }
+}
 #home-page > main > section:not(:first-of-type) > .team-member {
-  width: 70%;
   align-self: center;
   justify-self: center;
+}
+@media (min-width: 1025px) {
+  #home-page > main > section:not(:first-of-type) > .team-member {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:not(:first-of-type) > .team-member {
+    width: 70%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:not(:first-of-type) > .team-member {
+    width: 80%;
+  }
 }
 #home-page > main > section:first-of-type {
   min-height: 50vh;
@@ -675,11 +709,37 @@ article.team-member > section > ul > li > span {
   }
 }
 #home-page > main > section:first-of-type > section > h2 {
-  font-size: 6rem;
   text-transform: uppercase;
 }
-#home-page > main > section:first-of-type > section > h3 {
-  font-size: 4rem;
+@media (min-width: 1025px) {
+  #home-page > main > section:first-of-type > section > h2 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:first-of-type > section > h2 {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:first-of-type > section > h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1025px) {
+  #home-page > main > section:first-of-type > section > h3 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:first-of-type > section > h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:first-of-type > section > h3 {
+    font-size: 2rem;
+  }
 }
 #home-page > main > section:first-of-type > figure {
   display: flex;
@@ -1673,14 +1733,42 @@ article.team-member > section > ul > li > span {
   }
 }
 #singles-list > main > section:not(:first-of-type) > .book {
-  width: 50%;
   align-self: center;
   justify-self: center;
 }
+@media (min-width: 1025px) {
+  #singles-list > main > section:not(:first-of-type) > .book {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:not(:first-of-type) > .book {
+    width: 70%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:not(:first-of-type) > .book {
+    width: 80%;
+  }
+}
 #singles-list > main > section:not(:first-of-type) > .team-member {
-  width: 70%;
   align-self: center;
   justify-self: center;
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:not(:first-of-type) > .team-member {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:not(:first-of-type) > .team-member {
+    width: 70%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:not(:first-of-type) > .team-member {
+    width: 80%;
+  }
 }
 #singles-list > main > section:first-of-type {
   min-height: 50vh;
@@ -1721,11 +1809,37 @@ article.team-member > section > ul > li > span {
   }
 }
 #singles-list > main > section:first-of-type > section > h2 {
-  font-size: 6rem;
   text-transform: uppercase;
 }
-#singles-list > main > section:first-of-type > section > h3 {
-  font-size: 4rem;
+@media (min-width: 1025px) {
+  #singles-list > main > section:first-of-type > section > h2 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:first-of-type > section > h2 {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:first-of-type > section > h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:first-of-type > section > h3 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:first-of-type > section > h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:first-of-type > section > h3 {
+    font-size: 2rem;
+  }
 }
 #singles-list > main > section:first-of-type > figure {
   display: flex;
