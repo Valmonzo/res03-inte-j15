@@ -120,7 +120,7 @@ article.book > header > figure {
 }
 article.book > header > figure > img {
   border-radius: 5px;
-  max-height: 28rem;
+  height: 40vh;
   width: 100%;
 }
 article.book > header > figure > figcaption {
@@ -135,7 +135,7 @@ article.book > section {
 article.book > section > h4 {
   font-size: 1.5rem;
   margin-bottom: 1vh;
-  min-height: 2.5rem;
+  min-height: 12vh;
 }
 article.book > section > a {
   display: block;
@@ -417,25 +417,14 @@ body > footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 10vh;
-  grid-row-gap: 5vh;
+  grid-row-gap: 2vh;
 }
 #home-page > main > section:not(:first-of-type) > h4 {
   grid-column: 1/4;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 3vh;
+  padding-bottom: 3vh;
   font-weight: bold;
-  padding-bottom: 0.5vh;
-}
-@media (prefers-color-scheme: light) {
-  #home-page > main > section:not(:first-of-type) > h4 {
-    border-bottom: 2px solid #881212;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  #home-page > main > section:not(:first-of-type) > h4 {
-    border-bottom: 2px solid #c22b2b;
-  }
 }
 #home-page > main > section:not(:first-of-type) > .book {
   width: 50%;
@@ -483,10 +472,24 @@ body > footer {
 
 .header-book {
   display: grid;
-  grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
   min-height: 15vh;
+  grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-book {
+    grid-template-rows: 1fr 0.5fr 1.5fr;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header-book {
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+  }
+}
+@media (min-width: 1281px) {
+  .header-book {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 @media (prefers-color-scheme: light) {
   .header-book {
@@ -530,9 +533,27 @@ body > footer {
 
 body > header > figure {
   padding-left: 2vw;
-  grid-column: 2/3;
-  grid-row: 1/4;
   max-height: 15vh;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body > header > figure {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    justify-self: center;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body > header > figure {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: center;
+  }
+}
+@media (min-width: 1281px) {
+  body > header > figure {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
 }
 
 body > header > figure > img {
@@ -540,16 +561,33 @@ body > header > figure > img {
 }
 
 body > header > nav {
-  grid-column: 3/4;
   display: flex;
-  flex-direction: space-evenly;
   align-items: center;
   justify-content: center;
-  grid-row: 2/3;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body > header > nav {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media (min-width: 1025px) {
+  body > header > nav {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    flex-direction: space-evenly;
+  }
 }
 
 body > header > nav > ul {
   display: flex;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body > header > nav > ul {
+    flex-direction: column;
+  }
 }
 
 body > header > nav > ul > li {
@@ -568,12 +606,29 @@ body > header > ul {
   display: flex;
   align-items: center;
   justify-self: center;
-  grid-row: 2/3;
-  grid-column: 4/5;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body > header > ul {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+@media (min-width: 1025px) {
+  body > header > ul {
+    grid-row: 2/3;
+    grid-column: 4/5;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body > header > ul {
+    align-self: center;
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
 }
 
 body > header > ul > li {
-  margin-right: 1.5vw;
+  margin: 0 1.5vw;
 }
 
 body > header > ul > li > a {
