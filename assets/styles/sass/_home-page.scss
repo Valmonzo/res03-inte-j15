@@ -70,15 +70,43 @@
                 }
 
                 & > .book {
-                    width:50%;
                     align-self:center;
                     justify-self:center;
+                
+                    @media (min-width: 1025px){
+                        
+                        width:50%;
+                    }
+                    
+                    @media (min-width: 768px) and (max-width: 1024px){
+                        
+                        width:70%;
+                    }
+                    
+                    @media (min-width: 320px) and (max-width: 767px){
+                        
+                        width:80%;
+                    }
                 }
 
                 & > .team-member {
-                    width:70%;
                     align-self:center;
                     justify-self:center;
+                
+                    @media (min-width: 1025px){
+                        
+                        width:70%;
+                    }
+                    
+                    @media (min-width: 768px) and (max-width: 1024px){
+                        
+                        width:70%;
+                    }
+                    
+                    @media (min-width: 320px) and (max-width: 767px){
+                        
+                        width:80%;
+                    }
                 }
             }
 
@@ -122,12 +150,40 @@
 
 
                     &>h2 {
-                        font-size: 6rem;
                         text-transform: uppercase;
+
+                        @media (min-width: 1025px){
+                            
+                            font-size: 6rem;
+                        }
+                        
+                        @media (min-width: 768px) and (max-width: 1024px){
+                            
+                            font-size: 4.5rem;
+                        }
+                        
+                        @media (min-width: 320px) and (max-width: 767px){
+                            
+                            font-size: 3rem;
+                        }
                     }
 
                     &>h3 {
-                        font-size: 4rem;
+
+                        @media (min-width: 1025px){
+                            
+                            font-size: 4rem;
+                        }
+                        
+                        @media (min-width: 768px) and (max-width: 1024px){
+                            
+                            font-size: 3rem;
+                        }
+                        
+                        @media (min-width: 320px) and (max-width: 767px){
+                            
+                            font-size: 2rem;
+                        }
                     }
 
                 }
