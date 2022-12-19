@@ -196,7 +196,7 @@ body > header > nav {
 @media (min-width: 1025px) {
   body > header > nav {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
     flex-direction: space-evenly;
   }
 }
