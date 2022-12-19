@@ -771,6 +771,7 @@ article.team-member > section > ul > li > span {
     display: grid;
     grid-template-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
     padding-top: 5rem;
+    padding-bottom: 3rem;
   }
   body#single > main > section {
     grid-column: 2/4;
@@ -863,9 +864,11 @@ article.team-member > section > ul > li > span {
     padding-top: 1rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > footer > a {
+    display: block;
     padding-right: 1rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 1rem;
     text-underline-offset: 0.3rem;
+    white-space: nowrap;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > footer > a > span {
     padding-right: 0.4rem;
@@ -893,6 +896,18 @@ article.team-member > section > ul > li > span {
     grid-template-columns: repeat(3, 1fr);
     grid-columns-gap: 0.5rem;
   }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1025px) and (prefers-color-scheme: dark) {
+  body#single > main > section:last-of-type > section > section:not(:last-of-type) {
+    border-right: solid 2px #c22b2b;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1025px) {
+  body#single > main > section:last-of-type > section > section:not(:first-of-type) {
+    padding-left: 1rem;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1025px) {
   body#single > main > section:last-of-type > section > section > table > thead {
     font-size: 0.5rem;
     font-weight: bold;
@@ -912,16 +927,6 @@ article.team-member > section > ul > li > span {
   body#single > main > section:last-of-type > section > section > table > tbody > tr > th {
     text-align: end;
     padding-bottom: 1.8rem;
-  }
-}
-@media (prefers-color-scheme: dark) and (min-width: 1025px) and (prefers-color-scheme: light) {
-  body#single > main > section:last-of-type > section > section > table:nth-of-type(2) {
-    border-right: solid 2px #881212;
-  }
-}
-@media (prefers-color-scheme: dark) and (min-width: 1025px) and (prefers-color-scheme: dark) {
-  body#single > main > section:last-of-type > section > section > table:nth-of-type(2) {
-    border-right: solid 2px #c22b2b;
   }
 }
 @media (prefers-color-scheme: dark) and (min-width: 768px) and (max-width: 1024px) {
@@ -1251,6 +1256,8 @@ article.team-member > section > ul > li > span {
   body#single > main > section:first-of-type > section:first-of-type > h3 {
     padding-bottom: 1.5rem;
     font-size: 1.3rem;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
   body#single > main > section:first-of-type > section:first-of-type > p:first-of-type {
     padding-bottom: 0.8;
@@ -1345,19 +1352,37 @@ article.team-member > section > ul > li > span {
     grid-template-rows: 0.2fr 0.8fr;
     padding-top: 1rem;
     text-align: center;
+    margin-bottom: 3rem;
   }
   body#single > main > section:last-of-type > h3 {
     font-size: 1.8rem;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
+    margin: 5vh 0;
   }
   body#single > main > section:last-of-type > section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-columns-gap: 0.5rem;
   }
+}
+@media (prefers-color-scheme: light) and (min-width: 1025px) and (prefers-color-scheme: light) {
+  body#single > main > section:last-of-type > section > section:not(:last-of-type) {
+    border-right: solid 2px #881212;
+  }
+}
+@media (prefers-color-scheme: light) and (min-width: 1025px) {
+  body#single > main > section:last-of-type > section > section:not(:first-of-type) {
+    padding-left: 1rem;
+  }
+}
+@media (prefers-color-scheme: light) and (min-width: 1025px) {
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
     padding-bottom: 2rem;
     text-align: start;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
   body#single > main > section:last-of-type > section > section > table > tbody > tr > td {
     text-align: start;
@@ -1367,6 +1392,12 @@ article.team-member > section > ul > li > span {
   body#single > main > section:last-of-type > section > section > table > tbody > tr > th {
     text-align: end;
     padding-bottom: 1.8rem;
+  }
+}
+@media (prefers-color-scheme: light) and (min-width: 1025px) {
+  body#single > main > section:last-of-type > section > h3 {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 @media (prefers-color-scheme: light) and (min-width: 768px) and (max-width: 1024px) {
@@ -1525,26 +1556,28 @@ article.team-member > section > ul > li > span {
 }
 @media (prefers-color-scheme: light) and (min-width: 320px) and (max-width: 767px) {
   body#single > main {
-    min-height: 80vh;
+    min-height: 120vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding-top: 3rem;
+    text-align: justify;
   }
   body#single > main > section:first-of-type {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 4rem;
   }
   body#single > main > section:first-of-type > section:first-of-type > h3 {
     padding-bottom: 1.5rem;
     font-size: 1.3rem;
     text-align: center;
-  }
-  body#single > main > section:first-of-type > section:first-of-type > p:first-of-type {
-    padding-bottom: 0.8;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
   body#single > main > section:first-of-type > section:first-of-type > p {
-    line-height: 1.3;
+    margin-bottom: 2vh;
     font-size: 1.2rem;
+    padding: 0 5vw;
   }
   body#single > main > section:first-of-type > section:first-of-type > p > q {
     quotes: "«" "»";
@@ -1557,8 +1590,10 @@ article.team-member > section > ul > li > span {
   }
   body#single > main > section:first-of-type > section:last-of-type {
     display: grid;
-    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-rows: 0.1fr 0.9fr;
     gap: 10%;
+    margin-bottom: 2rem;
+    padding: 0 5vw;
   }
   body#single > main > section:first-of-type > section:last-of-type > figure {
     margin-left: 5rem;
@@ -1569,7 +1604,7 @@ article.team-member > section > ul > li > span {
     height: 100%;
   }
   body#single > main > section:first-of-type > section:last-of-type > article {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header {
     padding-bottom: 1.8rem;
@@ -1584,7 +1619,7 @@ article.team-member > section > ul > li > span {
     padding-bottom: 1.3rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header > section > span {
-    color: yellow;
+    color: #881212;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header > section > span:nth-of-type(5) {
     padding-right: 0.4rem;
@@ -1599,19 +1634,23 @@ article.team-member > section > ul > li > span {
   body#single > main > section:first-of-type > section:last-of-type > article > section > h4 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #c22b2b;
+    color: #881212;
     padding-bottom: 0.8rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > section > p {
     font-size: 1.2rem;
     padding-bottom: 0.8rem;
   }
+  body#single > main > section:first-of-type > section:last-of-type > article > section > select {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
   body#single > main > section:first-of-type > section:last-of-type > article > section > button {
     margin-top: 0.8rem;
     margin-left: 0.5rem;
     padding: 0.3rem;
     color: #fdebde;
-    background: #c22b2b;
+    background: #881212;
     border: none;
     border-radius: 3px;
   }
@@ -1627,26 +1666,27 @@ article.team-member > section > ul > li > span {
     padding-right: 0.4rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > footer > a:visited {
-    color: #fdebde;
+    color: #881212;
   }
   body#single > main > section:last-of-type {
     display: grid;
-    grid-template-rows: 0.2fr 0.8fr;
-    padding-top: 1rem;
-    text-align: center;
+    grid-template-rows: 0.1fr 0.9fr;
   }
   body#single > main > section:last-of-type > h3 {
     font-size: 1.8rem;
-    padding-bottom: 3rem;
+    text-align: center;
+    text-decoration: underline #c22b2b;
+    text-underline-offset: 0.3rem;
   }
   body#single > main > section:last-of-type > section {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-rows-gap: 0.5rem;
+    padding: 0 5vw;
   }
-  body#single > main > section:last-of-type > section > section {
-    margin-left: 5rem;
-    padding-bottom: 2rem;
+  body#single > main > section:last-of-type > section > section > table {
+    margin: 0;
+    width: 100%;
   }
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
@@ -1655,14 +1695,16 @@ article.team-member > section > ul > li > span {
     text-decoration: underline #c22b2b;
     text-underline-offset: 0.3rem;
   }
+  body#single > main > section:last-of-type > section > section > table > tbody > tr {
+    font-size: 0.9rem;
+  }
   body#single > main > section:last-of-type > section > section > table > tbody > tr > td:first-of-type {
     text-align: start;
     padding-bottom: 1.8rem;
-    padding-right: 3rem;
   }
   body#single > main > section:last-of-type > section > section > table > tbody > tr > td:last-of-type {
     text-align: end;
-    padding-bottom: 1.8rem;
+    padding-right: 5vw;
   }
 }
 

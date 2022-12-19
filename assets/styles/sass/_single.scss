@@ -7,6 +7,7 @@ body#single{
         display: grid;
         grid-template-columns: 0.1fr 0.4fr 0.4fr 0.1fr;
         padding-top: 5rem;
+        padding-bottom: 3rem;
          
         & > section{
             grid-column: 2/4;
@@ -127,9 +128,11 @@ body#single{
                         padding-top: 1rem;
                         
                         & > a{
+                            display: block;
                             padding-right: 1rem;
-                            padding-bottom: 2.5rem;
+                            margin-bottom: 1rem;
                             text-underline-offset: 0.3rem;
+                            white-space: nowrap;
                             
                             & > span{
                                 padding-right: 0.4rem;
@@ -168,11 +171,26 @@ body#single{
                 grid-template-columns: repeat(3, 1fr);
                 grid-columns-gap: 0.5rem;
                 
+                
                 & > section{
+                    
+                    &:not(:last-of-type){
+                            @media(prefers-color-scheme: dark){
+                                &{
+                                border-right: solid 2px $darkThemeRed;
+                                }
+                            }
+                    }
+                    
+                    &:not(:first-of-type){
+                        padding-left: 1rem;
+                    }
+                    
+                    
                     
                     & > table{
                         
-                        
+                       
                         
                         & > thead{
                             font-size: 0.5rem;
@@ -194,6 +212,7 @@ body#single{
                         
                         & > tbody{
                             
+                            
                             & > tr{
                                 
                                 
@@ -211,15 +230,7 @@ body#single{
                         }
                     }
                     
-                    & > table:nth-of-type(2){
-                            @media(prefers-color-scheme: light){
-                                border-right: solid 2px $red;
-                            }
-                            
-                            @media(prefers-color-scheme: dark){
-                                border-right: solid 2px $darkThemeRed;
-                            }
-                        }
+                    
                 }
             }
         }
@@ -702,9 +713,12 @@ body#single{
            & > section:first-of-type{
                margin-right: 5rem;
                
+               
                & > h3{
                    padding-bottom: 1.5rem;
                    font-size: 1.3rem;
+                   text-decoration: underline $darkThemeRed;
+                   text-underline-offset: 0.3rem;
                }
                
                & > p:first-of-type{
@@ -732,6 +746,7 @@ body#single{
            & > section:last-of-type{
                 display: grid;
                 grid-template-columns: 0.1fr 0.9fr;
+                
                 
                 
                 & > figure{
@@ -835,9 +850,13 @@ body#single{
             grid-template-rows: 0.2fr 0.8fr;
             padding-top: 1rem;
             text-align: center;
+            margin-bottom: 3rem;
             
             & > h3{
                 font-size: 1.8rem;
+                text-decoration: underline $darkThemeRed;
+                text-underline-offset: 0.3rem;
+                margin: 5vh 0;
             }
             
             & > section{
@@ -846,6 +865,20 @@ body#single{
                 grid-columns-gap: 0.5rem;
                 
                 & > section{
+                    
+                    &:not(:last-of-type){
+                        @media(prefers-color-scheme: light){
+                                & {
+                                border-right: solid 2px $red;
+                                }
+                            }
+                    }
+                    
+                    &:not(:first-of-type){
+                        padding-left: 1rem;
+                    }
+                    
+                    
                     
                     & > table{
                         
@@ -859,6 +892,8 @@ body#single{
                                         font-size: 1.2rem;
                                         padding-bottom: 2rem;
                                         text-align: start;
+                                        text-decoration: underline $darkThemeRed;
+                                        text-underline-offset: 0.3rem;
                                     }
                                 }
                             }
@@ -883,6 +918,11 @@ body#single{
                         }
                     }
                 }
+                
+                & > h3{
+                        margin-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
             }
         }
         
@@ -1117,10 +1157,11 @@ body#single{
     @media(prefers-color-scheme: light) and (min-width: 320px) and (max-width: 767px){
     
         & > main{
-        min-height: 80vh;
+        min-height: 120vh;
         display: grid;
         grid-template-rows: 1fr 1fr;
         padding-top: 3rem;
+        text-align: justify;
          
         & > section{
             
@@ -1129,6 +1170,7 @@ body#single{
         & > section:first-of-type{
             display: grid;
             grid-template-rows: repeat(2, 1fr);
+            margin-bottom: 4rem;
             
             
            & > section:first-of-type{
@@ -1138,15 +1180,15 @@ body#single{
                    padding-bottom: 1.5rem;
                    font-size: 1.3rem;
                    text-align: center;
+                   text-decoration: underline $darkThemeRed;
+                   text-underline-offset: 0.3rem;
                }
                
-               & > p:first-of-type{
-                   padding-bottom: 0.8;
-               }
                
                & > p{
-                   line-height: 1.3;
+                   margin-bottom: 2vh;
                    font-size: 1.2rem;
+                   padding: 0 5vw;
                    
                    & > q{
                        quotes: "«" "»";
@@ -1164,8 +1206,10 @@ body#single{
                
            & > section:last-of-type{
                 display: grid;
-                grid-template-columns: 0.1fr 0.9fr;
+                grid-template-rows: 0.1fr 0.9fr;
                 gap: 10%;
+                margin-bottom: 2rem;
+                padding: 0 5vw;
                 
                 
                 & > figure{
@@ -1179,7 +1223,7 @@ body#single{
                }
                
                 & > article{
-                    margin-right: 4rem;
+                    margin-right: 3rem;
                     
                     & > header{
                        padding-bottom: 1.8rem;
@@ -1195,7 +1239,7 @@ body#single{
                            padding-bottom: 1.3rem;
                            
                            & > span{
-                           color: yellow;
+                           color: $red;
                            }
                            
                            & > span:nth-of-type(5){
@@ -1218,7 +1262,7 @@ body#single{
                        & > h4{
                            font-size: 1.5rem;
                            font-weight: bold;
-                           color: $darkThemeRed;
+                           color: $red;
                            padding-bottom: 0.8rem;
                        }
                        
@@ -1228,12 +1272,17 @@ body#single{
                            padding-bottom: 0.8rem;
                        }
                        
+                       & > select{
+                           padding: 0.8rem;
+                           font-size: 1rem;
+                       }
+                       
                        & > button{
                            margin-top: 0.8rem;
                            margin-left: 0.5rem;
                            padding: 0.3rem;
                            color: $almond;
-                           background: $darkThemeRed;
+                           background: $red;
                            border: none;
                            border-radius: 3px;
                        }
@@ -1253,7 +1302,7 @@ body#single{
                         }
                         
                         & > a:visited{
-                            color: $almond;
+                            color: $red;
                         }
                     }
                 }
@@ -1264,27 +1313,31 @@ body#single{
             
         & > section:last-of-type{
             display: grid;
-            grid-template-rows: 0.2fr 0.8fr;
-            padding-top: 1rem;
-            text-align: center;
+            grid-template-rows: 0.1fr 0.9fr;
+            
+           
             
             & > h3{
                 font-size: 1.8rem;
-                padding-bottom: 3rem;
+                text-align: center;
+                text-decoration: underline $darkThemeRed;
+                text-underline-offset: 0.3rem;
             }
             
             & > section{
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
                 grid-rows-gap: 0.5rem;
+                padding: 0 5vw;
                 
                 & > section{
-                    margin-left: 5rem;
-                    padding-bottom: 2rem;
+                    
+                    
                     
                     
                     & > table{
-                        
+                        margin: 0;
+                        width: 100%;
                         
                         & > thead{
                             
@@ -1307,17 +1360,19 @@ body#single{
                             
                             
                             & > tr{
+                                font-size: 0.9rem;
                                 
                                 
                                 & > td:first-of-type{
                                     text-align: start;
                                     padding-bottom: 1.8rem;
-                                    padding-right: 3rem;
+                                    
                                 }
                                 
                                 & > td:last-of-type{
                                     text-align: end;
-                                    padding-bottom: 1.8rem;
+                                    padding-right: 5vw;
+                                    
                                 }
                             }
                         }
