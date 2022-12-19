@@ -23,8 +23,14 @@
                     text-transform:uppercase;
                     padding-bottom:3vh;
                     font-weight:bold;
-                    text-decoration: underline;
-                    text-underline-offset: 0.5em;
+                    
+                    @media(prefers-color-scheme: light) {
+                        border-bottom: solid $red 3px;
+                    }
+
+                    @media(prefers-color-scheme: dark) {
+                        border-bottom: solid $darkThemeRed 3px;
+                    }
                 }
 
                 & > .book {

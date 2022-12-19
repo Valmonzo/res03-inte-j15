@@ -509,6 +509,16 @@ article.team-member > section > ul > li > span {
   padding-bottom: 3vh;
   font-weight: bold;
 }
+@media (prefers-color-scheme: light) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    border-bottom: solid #881212 3px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    border-bottom: solid #c22b2b 3px;
+  }
+}
 #home-page > main > section:not(:first-of-type) > .book {
   width: 50%;
   align-self: center;
