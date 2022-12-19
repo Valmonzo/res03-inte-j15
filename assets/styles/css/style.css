@@ -771,7 +771,7 @@ article.team-member > section > ul > li > span {
   width: 90%;
 }
 
-@media (prefers-color-scheme: dark) and (min-width: 1025px) {
+@media (prefers-color-scheme: dark) and (min-width: 1401px) {
   body#single > main {
     min-height: 120vh;
     display: grid;
@@ -903,17 +903,17 @@ article.team-member > section > ul > li > span {
     grid-columns-gap: 0.5rem;
   }
 }
-@media (prefers-color-scheme: dark) and (min-width: 1025px) and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (min-width: 1401px) and (prefers-color-scheme: dark) {
   body#single > main > section:last-of-type > section > section:not(:last-of-type) {
     border-right: solid 2px #c22b2b;
   }
 }
-@media (prefers-color-scheme: dark) and (min-width: 1025px) {
+@media (prefers-color-scheme: dark) and (min-width: 1401px) {
   body#single > main > section:last-of-type > section > section:not(:first-of-type) {
     padding-left: 1rem;
   }
 }
-@media (prefers-color-scheme: dark) and (min-width: 1025px) {
+@media (prefers-color-scheme: dark) and (min-width: 1401px) {
   body#single > main > section:last-of-type > section > section > table > thead {
     font-size: 0.5rem;
     font-weight: bold;
@@ -935,7 +935,7 @@ article.team-member > section > ul > li > span {
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: dark) and (min-width: 768px) and (max-width: 1024px) {
+@media (prefers-color-scheme: dark) and (min-width: 871px) and (max-width: 1400px) {
   body#single > main {
     min-height: 80vh;
     display: grid;
@@ -1059,37 +1059,49 @@ article.team-member > section > ul > li > span {
   }
   body#single > main > section:last-of-type > h3 {
     font-size: 1.8rem;
-    padding-bottom: 3rem;
     text-decoration: underline #c22b2b;
     text-underline-offset: 0.3rem;
+    margin: 5vh 0;
   }
   body#single > main > section:last-of-type > section {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-rows-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-columns-gap: 0.5rem;
   }
-  body#single > main > section:last-of-type > section > section {
-    margin-left: 5rem;
-    padding-bottom: 2rem;
+}
+@media (prefers-color-scheme: dark) and (min-width: 871px) and (max-width: 1400px) and (prefers-color-scheme: dark) {
+  body#single > main > section:last-of-type > section > section:not(:last-of-type) {
+    border-right: solid 2px #c22b2b;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 871px) and (max-width: 1400px) {
+  body#single > main > section:last-of-type > section > section:not(:first-of-type) {
+    padding-left: 1rem;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 871px) and (max-width: 1400px) {
+  body#single > main > section:last-of-type > section > section > table > thead {
+    font-size: 0.5rem;
+    font-weight: bold;
   }
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
     padding-bottom: 2rem;
-    text-align: left;
+    text-align: start;
     text-decoration: underline #c22b2b;
     text-underline-offset: 0.3rem;
   }
-  body#single > main > section:last-of-type > section > section > table > tbody > tr > td:first-of-type {
+  body#single > main > section:last-of-type > section > section > table > tbody > tr > td {
     text-align: start;
     padding-bottom: 1.8rem;
     padding-right: 3rem;
   }
-  body#single > main > section:last-of-type > section > section > table > tbody > tr > td:last-of-type {
+  body#single > main > section:last-of-type > section > section > table > tbody > tr > th {
     text-align: end;
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: dark) and (min-width: 320px) and (max-width: 767px) {
+@media (prefers-color-scheme: dark) and (min-width: 320px) and (max-width: 870px) {
   body#single > main {
     min-height: 120vh;
     display: grid;
@@ -1242,7 +1254,7 @@ article.team-member > section > ul > li > span {
     padding-right: 5vw;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 1025px) {
+@media (prefers-color-scheme: light) and (min-width: 1401px) {
   body#single > main {
     min-height: 120vh;
     display: grid;
@@ -1305,7 +1317,7 @@ article.team-member > section > ul > li > span {
     padding-bottom: 1.3rem;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header > section > span {
-    color: yellow;
+    color: #881212;
   }
   body#single > main > section:first-of-type > section:last-of-type > article > header > section > span:nth-of-type(5) {
     padding-right: 0.4rem;
@@ -1372,17 +1384,17 @@ article.team-member > section > ul > li > span {
     grid-columns-gap: 0.5rem;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 1025px) and (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) and (min-width: 1401px) and (prefers-color-scheme: light) {
   body#single > main > section:last-of-type > section > section:not(:last-of-type) {
     border-right: solid 2px #881212;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 1025px) {
+@media (prefers-color-scheme: light) and (min-width: 1401px) {
   body#single > main > section:last-of-type > section > section:not(:first-of-type) {
     padding-left: 1rem;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 1025px) {
+@media (prefers-color-scheme: light) and (min-width: 1401px) {
   body#single > main > section:last-of-type > section > section > table > thead > tr > th > h6 {
     font-size: 1.2rem;
     padding-bottom: 2rem;
@@ -1400,13 +1412,13 @@ article.team-member > section > ul > li > span {
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 1025px) {
+@media (prefers-color-scheme: light) and (min-width: 1401px) {
   body#single > main > section:last-of-type > section > h3 {
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 768px) and (max-width: 1024px) {
+@media (prefers-color-scheme: light) and (min-width: 871px) and (max-width: 1400px) {
   body#single > main {
     min-height: 80vh;
     display: grid;
@@ -1560,7 +1572,7 @@ article.team-member > section > ul > li > span {
     padding-bottom: 1.8rem;
   }
 }
-@media (prefers-color-scheme: light) and (min-width: 320px) and (max-width: 767px) {
+@media (prefers-color-scheme: light) and (min-width: 320px) and (max-width: 870px) {
   body#single > main {
     min-height: 120vh;
     display: grid;
