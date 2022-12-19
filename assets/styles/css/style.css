@@ -160,6 +160,8 @@ body > header > figure {
     grid-column: 2/5;
     grid-row: 1/2;
     justify-self: center;
+    align-self: center;
+    height: 100%;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -191,6 +193,7 @@ body > header > nav {
     grid-row: 3/4;
     align-self: center;
     justify-self: center;
+    padding-bottom: 3vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -223,8 +226,10 @@ body > header > nav > ul > li {
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   body > header > nav > ul > li {
-    margin-bottom: 1.5vh;
     text-align: center;
+  }
+  body > header > nav > ul > li:not(:last-of-type) {
+    margin-bottom: 3vh;
   }
 }
 
@@ -509,6 +514,7 @@ article.team-member > section > a > span {
 }
 article.team-member > section > ul {
   padding: 1vh 0;
+  min-height: 10rem;
 }
 article.team-member > section > ul > li {
   font-size: 1.1rem;
