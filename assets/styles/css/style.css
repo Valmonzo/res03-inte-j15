@@ -488,6 +488,13 @@ article.team-member > section > ul > li > span {
     </article>
 
 */
+/*
+
+@media (min-width: 1025px)
+@media (min-width: 768px) and (max-width: 1024px)
+@media (min-width: 320px) and (max-width: 767px)
+
+*/
 #home-page > main {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 0.1fr;
@@ -498,16 +505,44 @@ article.team-member > section > ul > li > span {
 }
 #home-page > main > section:not(:first-of-type) {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 10vh;
   grid-row-gap: 2vh;
 }
+@media (min-width: 1025px) {
+  #home-page > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 #home-page > main > section:not(:first-of-type) > h4 {
-  grid-column: 1/4;
   font-size: 2rem;
   text-transform: uppercase;
   padding-bottom: 3vh;
   font-weight: bold;
+}
+@media (min-width: 1025px) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/2;
+  }
 }
 @media (prefers-color-scheme: light) {
   #home-page > main > section:not(:first-of-type) > h4 {
@@ -539,7 +574,23 @@ article.team-member > section > ul > li > span {
 #home-page > main > section:first-of-type > section {
   justify-self: center;
   align-self: center;
-  grid-column: 2/3;
+}
+@media (min-width: 1025px) {
+  #home-page > main > section:first-of-type > section {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:first-of-type > section {
+    grid-column: 2/4;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:first-of-type > section {
+    grid-column: 2/4;
+    text-align: center;
+  }
 }
 @media (prefers-color-scheme: light) {
   #home-page > main > section:first-of-type > section span {
@@ -562,7 +613,21 @@ article.team-member > section > ul > li > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 3/4;
+}
+@media (min-width: 1025px) {
+  #home-page > main > section:first-of-type > figure {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home-page > main > section:first-of-type > figure {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home-page > main > section:first-of-type > figure {
+    display: none;
+  }
 }
 #home-page > main > section:first-of-type > figure > img {
   width: 90%;
@@ -1392,6 +1457,13 @@ article.team-member > section > ul > li > span {
   }
 }
 
+/*
+
+@media (min-width: 1025px)
+@media (min-width: 768px) and (max-width: 1024px)
+@media (min-width: 320px) and (max-width: 767px)
+
+*/
 #singles-list > main {
   display: grid;
   grid-template-columns: 0.1fr 0.8fr 0.1fr;
@@ -1402,16 +1474,44 @@ article.team-member > section > ul > li > span {
 }
 #singles-list > main > section:not(:first-of-type) {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 10vh;
-  grid-row-gap: 1vh;
+  grid-row-gap: 2vh;
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:not(:first-of-type) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #singles-list > main > section:not(:first-of-type) > h4 {
-  grid-column: 1/4;
   font-size: 2rem;
   text-transform: uppercase;
   padding-bottom: 3vh;
   font-weight: bold;
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:not(:first-of-type) > h4 {
+    grid-column: 1/2;
+  }
 }
 @media (prefers-color-scheme: light) {
   #singles-list > main > section:not(:first-of-type) > h4 {
@@ -1428,6 +1528,11 @@ article.team-member > section > ul > li > span {
   align-self: center;
   justify-self: center;
 }
+#singles-list > main > section:not(:first-of-type) > .team-member {
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+}
 #singles-list > main > section:first-of-type {
   min-height: 50vh;
   display: grid;
@@ -1438,7 +1543,23 @@ article.team-member > section > ul > li > span {
 #singles-list > main > section:first-of-type > section {
   justify-self: center;
   align-self: center;
-  grid-column: 2/3;
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:first-of-type > section {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:first-of-type > section {
+    grid-column: 2/4;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:first-of-type > section {
+    grid-column: 2/4;
+    text-align: center;
+  }
 }
 @media (prefers-color-scheme: light) {
   #singles-list > main > section:first-of-type > section span {
@@ -1461,7 +1582,21 @@ article.team-member > section > ul > li > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 3/4;
+}
+@media (min-width: 1025px) {
+  #singles-list > main > section:first-of-type > figure {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #singles-list > main > section:first-of-type > figure {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #singles-list > main > section:first-of-type > figure {
+    display: none;
+  }
 }
 #singles-list > main > section:first-of-type > figure > img {
   width: 90%;
