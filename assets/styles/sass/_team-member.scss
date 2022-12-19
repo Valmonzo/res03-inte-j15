@@ -1,69 +1,68 @@
-article.book{
-
-    border-radius: 5px;
-    padding: 3vh 3vw 1.5vh 3vw;
-
+article.team-member{
+    
+    border-radius: 50px;
+    padding: 2vh;
+    
     @media(prefers-color-scheme: light){
-
+        
+        background-color: $almond;
+        color: black;
         border-bottom: solid 2px $red;
         border-right: solid 2px $red;
         border-top: solid 1px $red;
         border-left: solid 1px $red;
-        background-color: $almond;
-        color: black;
         box-shadow: 4px 4px 4px 0 $red;
     }
-
+    
     @media(prefers-color-scheme: dark){
-
+        
+        background-color: $black;
+        color: $almond;
         border-bottom: solid 2px $darkThemeRed;
         border-right: solid 2px $darkThemeRed;
         border-top: solid 1px $darkThemeRed;
         border-left: solid 1px $darkThemeRed;
-        color: $almond;
         box-shadow: 4px 4px 4px 0 $darkThemeRed;
     }
-
-
+    
+    
     &>header{
-
+        
         &>figure{
-
+            
             max-width: 100%;
-
+                
             &>img{
-
-                border-radius: 5px;
-                height: 40vh;
+                
                 width: 100%;
-
+                border-radius: 50px;
             }
-
+            
             &>figcaption{
-
+            
                 display: none;
             }
         }
-
+        
         &>h4{
-
+            
             display: none;
         }
     }
-
+    
     &>section{
-
+        
         padding: .5vh;
-
+        
         &>h4{
-
-            font-size: 1.5rem;
+            
+            font-size: 1.7rem;
             margin-bottom: 1vh;
-            min-height: 12vh;
+            text-align: center;
         }
-
+        
         &>a{
-
+            
             display: block;
             text-decoration: none;
             text-align: center;
@@ -72,89 +71,40 @@ article.book{
             margin-bottom: 1vh;
             border-radius: 10px;
             padding: .5vh;
-
+            
             @media(prefers-color-scheme: light){
-
+                
                 color: $red;
             }
-
+            
             @media(prefers-color-scheme: dark){
-
+                
                 color: $darkThemeRed;
             }
-
+            
             &>span{
-
+                
                 margin-left: 4%;
             }
         }
-
-    }
-
-    &>footer{
-
-        padding: .5vh;
-
-        &>a{
-
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 10px;
-            padding: 1.5vh .5vw;
-            margin-right: 0.2vw;
-
-            @media(prefers-color-scheme: light){
-
-                background-color: $red;
-                color: $almond;
-            }
-
-            @media(prefers-color-scheme: dark){
-
-                background-color: $darkThemeRed;
-                color: $almond;
-            }
-
-            &>span{
-
-                display: none;
-                border-left: solid 2px $almond;
-                padding-left: 0.2vw;
-            }
-
-            &:hover{
-
+        
+        &>ul{
+            
+            padding: 1vh 0;
+            
+            &>li{
+                
+                font-size: 1.1rem;
+                font-weight: bold;
+                margin: .5vh 0;
+                
                 &>span{
-
-                    display: inline-block;
+                    
+                    margin-right: .5vw;
                 }
             }
         }
-
-
-        &>figure{
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-top: 2vh;
-
-
-            &>img{
-
-                max-width: 30%;
-                border-radius: 50px;
-                margin-right: 1vw;
-            }
-
-            &>figcaption{
-
-                font-size: 1.3rem;
-            }
-        }
+        
     }
 }
 /*
@@ -179,5 +129,29 @@ article.book{
             </figure>
         </footer>
     </article>
+    
+*/
 
+/*                
+
+    <article class="team-member">
+        <header>
+            <figure>
+                <img src="assets/img/" alt="">
+                <figcaption>Un membre éminent de notre équipe.</figcaption>
+            </figure>
+            <h4>ID: </h4>
+        </header>
+        <section>
+            <h4>ID: </h4>
+            <a href="">En savoir plus<span class="fa-solid fa-user-plus"></span></a>
+            <ul>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-quote-left"></span>""</li>
+            </ul>
+        </section>
+    </article>
+    
 */
