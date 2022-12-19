@@ -514,6 +514,7 @@ article.team-member > section > a > span {
 }
 article.team-member > section > ul {
   padding: 1vh 0;
+  min-height: 10rem;
 }
 article.team-member > section > ul > li {
   font-size: 1.1rem;
