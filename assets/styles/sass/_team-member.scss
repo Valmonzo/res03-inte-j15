@@ -1,0 +1,157 @@
+article.team-member{
+    
+    border-radius: 50px;
+    padding: 2vh;
+    
+    @media(prefers-color-scheme: light){
+        
+        background-color: $almond;
+        color: black;
+        border-bottom: solid 2px $red;
+        border-right: solid 2px $red;
+        border-top: solid 1px $red;
+        border-left: solid 1px $red;
+        box-shadow: 4px 4px 4px 0 $red;
+    }
+    
+    @media(prefers-color-scheme: dark){
+        
+        background-color: $black;
+        color: $almond;
+        border-bottom: solid 2px $darkThemeRed;
+        border-right: solid 2px $darkThemeRed;
+        border-top: solid 1px $darkThemeRed;
+        border-left: solid 1px $darkThemeRed;
+        box-shadow: 4px 4px 4px 0 $darkThemeRed;
+    }
+    
+    
+    &>header{
+        
+        &>figure{
+            
+            max-width: 100%;
+                
+            &>img{
+                
+                width: 100%;
+                border-radius: 50px;
+            }
+            
+            &>figcaption{
+            
+                display: none;
+            }
+        }
+        
+        &>h4{
+            
+            display: none;
+        }
+    }
+    
+    &>section{
+        
+        padding: .5vh;
+        
+        &>h4{
+            
+            font-size: 1.7rem;
+            margin-bottom: 1vh;
+            text-align: center;
+        }
+        
+        &>a{
+            
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1vh;
+            border-radius: 10px;
+            padding: .5vh;
+            
+            @media(prefers-color-scheme: light){
+                
+                color: $red;
+            }
+            
+            @media(prefers-color-scheme: dark){
+                
+                color: $darkThemeRed;
+            }
+            
+            &>span{
+                
+                margin-left: 4%;
+            }
+        }
+        
+        &>ul{
+            
+            padding: 1vh 0;
+            
+            &>li{
+                
+                font-size: 1.1rem;
+                font-weight: bold;
+                margin: .5vh 0;
+                
+                &>span{
+                    
+                    margin-right: .5vw;
+                }
+            }
+        }
+        
+    }
+}
+/*
+
+    <article class="book">
+        <header>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Couverture du livre: "" de .</figcaption>
+            </figure>
+            <h4></h4>
+        </header>
+        <section>
+            <h4></h4>
+            <a href="">Détails<span class="fa-solid fa-arrow-down-short-wide"></span></a>
+        </section>
+        <footer>
+            <a href="">Prix: <span>Ajouter au panier</span></a>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </footer>
+    </article>
+    
+*/
+
+/*                
+
+    <article class="team-member">
+        <header>
+            <figure>
+                <img src="assets/img/" alt="">
+                <figcaption>Un membre éminent de notre équipe.</figcaption>
+            </figure>
+            <h4>ID: </h4>
+        </header>
+        <section>
+            <h4>ID: </h4>
+            <a href="">En savoir plus<span class="fa-solid fa-user-plus"></span></a>
+            <ul>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-square-check"></span></li>
+                <li><span class="fa-solid fa-quote-left"></span>""</li>
+            </ul>
+        </section>
+    </article>
+    
+*/

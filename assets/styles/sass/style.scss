@@ -1,11 +1,13 @@
 @import "reset";
 @import "vars";
 @import "classes";
-@import "book";
-@import "footer";
-@import "home-page";
 @import "header";
+@import "book";
+@import "team-member";
+@import "home-page";
 @import "single";
+@import "singles-list";
+@import "footer";
 html{
 
     font-family: 'Roboto', sans-serif;
